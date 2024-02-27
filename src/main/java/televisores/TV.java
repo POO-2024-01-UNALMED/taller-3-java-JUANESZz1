@@ -1,6 +1,6 @@
 package televisores;
 public class TV {
-    Marca marca;
+    private Marca marca;
 	private int canal = 1;
 	private int precio = 500;
 	boolean estado;
@@ -8,12 +8,13 @@ public class TV {
 	private int numTV = 0;
 	 
 	public TV(Marca marca, boolean estado) {
-		System.out.println("Se ha creado un objeto de clase tv");
-		
-		    numTV = ++numTV;
-			System.out.println("Se ha construido un nuevo objeto");
-			System.out.println("Hay " + numTV + " objetos");
-		}
+			
+	    this.marca = marca;
+        this.estado = estado;
+        this.canal = 1;
+        this.volumen = 1;
+        this.precio = 500;
+        numTV++;	}
 		
 	}
 	
