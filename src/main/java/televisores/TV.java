@@ -61,4 +61,69 @@ public void turnOff(){
 		System.out.println("El tv ya estaba apagado");
 	}
 }
+public boolean getEstado(){
+return this.estado;	
 }
+
+public void canalDown(){
+	if (getEstado() == true){ 
+if (getCanal() == 1){
+
+	
+}else{ 
+setCanal(getCanal() - 1);
+
+}
+	}else {
+
+	}
+	}
+
+public void canalUp(){
+	if (getEstado() == true){ 
+if (getCanal() == 120){
+
+	
+}else{ 
+setCanal(getCanal() + 1);
+
+}
+	}else {
+		
+	}
+	}
+
+public void volumenDown(){
+if (getVolumen() == true){ 
+if (getVolumen() == 0){
+
+	
+}else{ 
+setVolumen(getVolumen() - 1);
+
+}
+	}else {
+		
+	}
+	}
+
+}
+
+public void volumenUp(){
+	if (getEstado() == true){ 
+if (getVolumen() = 7){
+
+	
+}else{ 
+setVolumen(getVolumen() + 1);
+
+}
+	}else {
+		
+	}
+	}
+
+
+
+
+
